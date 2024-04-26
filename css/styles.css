@@ -1,0 +1,46 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+    - font size (px) : 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    - font weights :
+    - default: 400
+    - line heights :
+    - default: 1
+
+--- 02 COLORS
+
+    - primary : #e67e22
+    - tints :
+    - shades :
+    - accents :
+    - grays : #555
+
+--- 05 SHADOWS
+
+--- 06 BORDER RADIUS
+
+--- 07 WHITESPACE
+    - spacing system (px) : 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    /* percentage of user's browser font-size setting*/
+    font-size: 62.5%;
+    /*
+    rem => root element font size : rem is used as a unit of responsive design 
+    default : 1rem = 16px
+    we set font size of the root element (HTML) to 10px then 1rem = 10px
+    */
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
