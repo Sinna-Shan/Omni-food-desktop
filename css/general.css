@@ -20,7 +20,7 @@
             #fdf2e9
             #fae5d3
     - shades :#cf711f
-    - accents :
+    - accents : #51cf66
     - grays : #555, #333
 
 --- 05 SHADOWS
@@ -28,6 +28,7 @@
 
 --- 06 BORDER RADIUS
   - default:9px
+  - meadium:11px
 
 --- 07 WHITESPACE
     - spacing system (px) : 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -159,4 +160,8 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }
