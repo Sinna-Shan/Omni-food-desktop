@@ -75,16 +75,15 @@
     text-align: center;
   }
 
-  .delivered-meals{
+  .delivered-meals {
     justify-content: center;
     margin-top: 3.2rem;
   }
-  .logos img{
+  .logos img {
     height: 2.4rem;
-
   }
 
-  .step-number{
+  .step-number {
     font-size: 7.4rem;
   }
   .meal-content {
@@ -96,20 +95,77 @@
     grid-template-columns: 1fr;
   }
 
-  .gallery{
-    grid-template-columns: repeat(6,1fr);
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
   }
 
-  .cta{
+  .cta {
     grid-template-columns: 3fr 2fr;
   }
 
-  .cta-form{
+  .cta-form {
     grid-template-columns: 1fr;
   }
 
-  .btn-form{
+  .btn-form {
     margin-top: 1.2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in;
+    transform: translateX(100%);
+
+    /* Hidding */
+    /* Allow no animation */
+    /* display: none; */
+
+    /* hide it visually */
+    opacity: 0;
+
+    /* make it un accessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav{
+    opacity: 100%;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"]{
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"]{
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
   }
 }
 
