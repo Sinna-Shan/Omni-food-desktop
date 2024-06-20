@@ -60,6 +60,8 @@ html {
       we set font size of the root element (HTML) to 10px then 1rem = 10px
       */
   overflow-x: hidden;
+  
+  scroll-behavior: smooth;
 }
 
 body {
@@ -67,7 +69,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-
   /* works only nothing possitioned absolute relative to body */
   overflow-x: hidden;
 }
